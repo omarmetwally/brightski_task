@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.brightski_task">
    <application
-        android:label="brightski_task"
+        android:label="BrightSki Recipes"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
