@@ -11,10 +11,10 @@ https://github.com/omarmetwally/brightski_task/assets/20462286/76495d1e-7794-4f9
 
 
 # Important Packages:
-  'shared_preferences':for storing local data.<br>
-  'equatable':for memory (Hashcode) on creating objects.<br>
-  dio & http (same usage but differetnt implementaion).<br>
-  flutter_bloc: for state mangement.<br>
-  get_it: for state mangement.<br>
-  dartz: ^0.10.1.<br>
+  'shared_preferences' : for storing local data.<br>
+  'equatable' : for memory (Hashcode) on creating objects.<br>
+  dio & http :  (same usage but differetnt implementaion).<br>
+  flutter_bloc :  for state mangement.<br>
+  get_it  : for state mangement.<br>
+  dartz  : ^0.10.1.<br>
  
