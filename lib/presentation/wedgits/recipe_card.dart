@@ -1,4 +1,4 @@
-import 'package:brightski_task/presentation/screens/meal_detail_screen.dart';
+import 'package:brightski_task/presentation/screens/recipe_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class RecipeCard extends StatelessWidget {
