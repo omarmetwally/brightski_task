@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:brightski_task/presentation/models/recipe.dart';
+import 'package:brightski_task/presentation/screens/auth_screen.dart';
 import 'package:brightski_task/presentation/screens/recipe_detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -94,7 +95,9 @@ class _MyAppState extends State<MyApp> {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => TabsScreen(_favoriteMeals),
+        '/': (context) =>AuthScreen(),//(context) => TabsScreen(_favoriteMeals),
+        TabsScreen.routeName: (context) =>
+            TabsScreen(_favoriteMeals),
         MealDetailScreen.routeName: (context) =>
             MealDetailScreen(_toggleFavorite, _isMealFavorite),
       },

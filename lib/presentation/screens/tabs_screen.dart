@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 
 class TabsScreen extends StatefulWidget {
-
+  static const routeName = '/tabs-screen';
   final List<Recipe> favoriteMeals;
 
   TabsScreen(this.favoriteMeals);
@@ -43,6 +43,7 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
 
 
       body: _pages[_selectedPageIndex]['page']as Widget,
