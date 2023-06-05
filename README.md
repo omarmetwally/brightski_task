@@ -1,4 +1,7 @@
 ### `BrightSki Task`
+## `For Login:`
+`Email:` omar@brightski.com
+`Password:` 12345678
 
 
 
