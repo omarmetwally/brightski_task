@@ -151,7 +151,7 @@ class _AuthCardState extends State<AuthCard> {
         else
           {
 
-            _showErrorDialog("Wrong Email & Password \n omar@brightSki.com \n 12345678");
+            _showErrorDialog("Wrong Email & Password \n omar@brightski.com \n 12345678");
 
 
           }
