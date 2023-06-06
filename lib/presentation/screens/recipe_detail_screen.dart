@@ -17,7 +17,7 @@ class MealDetailScreen extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 10),
       child: Text(
         text,
-        style: Theme.of(context).textTheme.title,
+        style: Theme.of(context).textTheme.headline6,
       ),
     );
   }
@@ -48,7 +48,7 @@ class MealDetailScreen extends StatelessWidget {
         "rating": (val["rating"]) != null ? val["rating"].rating : 0,
         "image": val["thumbnailUrl"],
         "description": val["description"],
-        "ingredients": [],
+        "ingredients": val["ingredients"],
       },
     );
 
@@ -59,7 +59,7 @@ class MealDetailScreen extends StatelessWidget {
 
 
     final prefs = await SharedPreferences.getInstance();
-  //  prefs.clear();
+    prefs.clear();
     if (prefs.containsKey('recipes')) {
 
       final extractedUserData2 = prefs.getString('recipes')!;
@@ -177,7 +177,7 @@ class MealDetailScreen extends StatelessWidget {
               buildContainer(
                 ListView.builder(
                   itemBuilder: (ctx, index) => Card(
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).colorScheme.secondary,
                     child: Padding(
                         padding: EdgeInsets.symmetric(
                           vertical: 5,

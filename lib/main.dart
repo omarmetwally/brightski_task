@@ -90,7 +90,9 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.cyan,
-        accentColor: Colors.yellowAccent,
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          secondary: Colors.red, // Your accent color
+        ),
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
       ),
       initialRoute: '/',

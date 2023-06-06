@@ -5,7 +5,7 @@ class Recipe {
   late final String? time;
   late final num? rating;
   late final String? description;
-  late final List<String>? ingredients;
+   late final List<String>? ingredients;
 
   Recipe({
     required this.id,
@@ -37,6 +37,7 @@ class Recipe {
 
   @override
   String toString() {
-    return '{"id":"$id","name": "$name", "image": "$image", "time": "$time", "rating": $rating,"description":"$description","ingredients":"$ingredients"}';
+   // final test=(ingredients as List).map((item) => "$item").toList();
+    return '{"id":"$id","name": "$name", "image": "$image", "time": "$time", "rating": $rating,"description":"$description","ingredients":$ingredients}';
   }
 }
